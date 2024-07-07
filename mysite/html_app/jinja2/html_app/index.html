@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+<body>
+
+    <table>
+        <tr>
+          <th>Модуль</th>
+          <th>Функция</th>
+          <th>Описание</th>
+          <th>Код</th>
+        </tr>
+        {% for module,funcs in map_func.items() %}
+        {% for func_name,value in funcs.items() %}
+        <tr>
+        <td>{{module}}</td>
+        <td>{{func_name}}</td>
+        <td>{{value['func_doc']}}</td>
+        <td><code>{{value['func_source_code']}}</code></td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+      </table>
+</body>
+</html>
