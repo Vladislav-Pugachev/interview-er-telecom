@@ -5,7 +5,6 @@ def sorted_version(data):
     list_version=[]
     sorted_map={}
     for i,v in data.items():
-        print(i,v)
         list_version.append(v['ident'])
     list_version.sort(key=lambda s: list(map(int, s.split('.'))),reverse=True)
     for i in list_version:
