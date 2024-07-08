@@ -2,7 +2,7 @@
 
 #### Запуск сервера
 ```
-python manage.py runserver
+~/mysite$ python manage.py runserver
 Watching for file changes with StatReloader
 Performing system checks...
 
@@ -24,17 +24,17 @@ Quit the server with CONTROL-C.
 #### Проверка работы клиента с правльным путем
 
 ```
-python client.py 
+$ python client.py 
 {"ERROR number 3": {"ident": "2.5", "value": ["Boo", "Boo", "Boo"]}, "ERROR number 1": {"ident": "2.1.11", "value": ["test", "test"]}, "ERROR number 2": {"ident": "2.1.2", "value": ["bla", "bla"]}}
 ```
 #### Проверка работы клиента с неправльными путями
 
 ```
-python client.py 
+$ python client.py 
 Unknown module NAME
 ```
 
 ```
-python client.py 
+$ python client.py 
 Unknown function NAME
 ```
