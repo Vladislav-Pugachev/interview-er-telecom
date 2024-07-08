@@ -21,13 +21,13 @@ Quit the server with CONTROL-C.
 
 ![image](./image/html.png)
 
-#### Проверка работы клиента с правльным путем
+#### Проверка работы клиента с правильным путем
 
 ```
 $ python client.py 
 {"ERROR number 3": {"ident": "2.5", "value": ["Boo", "Boo", "Boo"]}, "ERROR number 1": {"ident": "2.1.11", "value": ["test", "test"]}, "ERROR number 2": {"ident": "2.1.2", "value": ["bla", "bla"]}}
 ```
-#### Проверка работы клиента с неправльными путями
+#### Проверка работы клиента с неправильными путями
 
 ```
 $ python client.py 
